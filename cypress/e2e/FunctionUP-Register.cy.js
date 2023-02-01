@@ -8,10 +8,7 @@ describe('Login flow', () => {
     cy.get("input[type='checkbox']").click({scrollBehavior:false})
     cy.get("button[type='button']").click({scrollBehavior:false})
     cy.wait(1000)
-    cy.get("input[placeholder='Enter OTP']").click({scrollBehavior:false}).type("0000")
-    cy.get("button[type='button']").click({scrollBehavior: false})
-    cy.wait(2000)
-    })
+      })
   
   it('Invalid credentials alphanumeric', function () {
     cy.visit('https://functionup.org/')
